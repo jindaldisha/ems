@@ -1,0 +1,17 @@
+.box-div{
+    width: 45rem;
+    position: relative;
+}
+
+
+.submit-button{
+    width: 7rem;
+    color: whitesmoke;
+    background-color: #6D4D49;
+}
+
+.delete-button{
+    width: 7rem;
+    color: whitesmoke;
+    background-color: #523936;
+}

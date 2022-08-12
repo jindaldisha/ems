@@ -1,0 +1,31 @@
+.nav-title{
+    border: 1px solid white;
+    padding: 3px 10px 3px 10px;
+    padding:
+}
+nav{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #362624;
+    padding: 0;
+}
+
+footer{
+    background-color: #362624;
+    position: fixed;
+    bottom:0;
+    height: 10px;
+    width: 100%;
+}
+
+.navbar-brand{
+    margin-right: 20rem;
+}
+
+main{
+    padding: 5rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-items{
+    width: 25rem;
+}

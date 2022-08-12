@@ -1,0 +1,58 @@
+<div class="box-div">
+    <form class="container-sm p-3" (ngSubmit) = "onSubmit()">
+        <div class="form-floating mt-4 md-12">
+            <input type="text" class="form-control" id="employeeUserName" placeholder="Username" 
+            [(ngModel)] = "employee.employeeUserName" name = "employeeUserName">
+            <label for="employeeUserName" class="form-label">Username</label>
+        </div>
+    
+        <div class="row g-3 mt-1">
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="employeeFirstName" placeholder="First Name" 
+                [(ngModel)] = "employee.employeeFirstName" name="employeeFirstName">
+                <label for="employeeFirstName" class="form-label">First Name</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="employeeLastName" placeholder="Last Name" 
+                [(ngModel)] = "employee.employeeLastName" name="employeeLastName">
+                <label for="employeeLastName" class="form-label">Last Name</label>
+            </div>
+        </div>
+    
+        <div class="row g-3 mt-1">
+            <div class="form-floating col-md-6">
+                <select class="form-select" id="employeeDepartment"
+                [(ngModel)] = "employee.employeeDepartment" name="employeeDepartment">
+                <option selected disabled>Select Your Department</option>
+                <option value="Admin">Admin</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                </select>
+                <label for="employeeDepartment">Department</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <select class="form-select" id="employeeRole"
+                [(ngModel)] = "employee.employeeRole" name="employeeRole">
+                <option selected disabled>Select Your Role</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Architect">Architect</option>
+                <option value="Manager">Manager</option>
+                <option value="Software Engineer">Software Engineer</option>
+                </select>
+                <label for="employeeRole">Role</label>
+            </div>
+        </div>
+        
+        <div class="form-floating mt-4">
+            <input type="employeeAddress" class="form-control" id="employeeAddress" placeholder="Address"
+            [(ngModel)] = "employee.employeeAddress" name="employeeAddress">
+            <label for="employeeAddress" class="form-label">Address</label>
+            
+        </div>
+            <div class="col-auto d-flex flex-row justify-content-around mt-3">
+                <button type="submit" class="btn submit-button">Submit</button>
+                <button class="btn submit-button" routerLink="/employees">Go Back</button>
+            </div>
+    </form>
+    
+</div>

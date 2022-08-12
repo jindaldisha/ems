@@ -1,0 +1,23 @@
+<div>
+    <div class="heading text-center">
+        <h1 class="mb-0">Employee Id: {{employee.employeeId}}</h1>
+    </div>
+    
+    <div class="employee-info text-justify">
+        <h5><b>User Name :</b> {{employee.employeeUserName}}</h5>
+        <h5><b>First Name :</b> {{employee.employeeFirstName}}</h5>
+        <h5><b>Last Name :</b> {{employee.employeeLastName}}</h5>
+        <h5><b>Department :</b> {{employee.employeeDepartment}}</h5>
+        <h5><b>Role :</b> {{employee.employeeRole}}</h5>
+        <h5><b>Address :</b> {{employee.employeeAddress}}</h5>
+    </div>
+    <div class="col-auto d-flex flex-row justify-content-around mt-3">           
+        <button class=" btn submit-button" (click) = "onEdit(employee.employeeId)">
+            Edit
+        </button>
+        <button class="btn submit-button" routerLink="/employees">
+            Go Back
+        </button>
+    </div>
+</div>
+        

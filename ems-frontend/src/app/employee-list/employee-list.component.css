@@ -1,0 +1,19 @@
+.container{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.table-heading{
+    background-color: #523936;
+    color: whitesmoke;
+}
+
+.blue-header{
+    background-color: #89605B;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+
+tbody tr:hover{
+    background-color: #C5ABA8;
+}
